@@ -1,0 +1,20 @@
+// ############ Fonts ############
+
+// @mixin font-face ($name, $file-name, $font-weight, $font-style: normal) {
+//   @font-face {
+//      font-family: $name;
+//       src: url('../fonts/#{$file-name}.woff2') format('woff2'),
+//           url('../fonts/#{$file-name}.woff') format('woff');
+//       font-weight: $font-weight;
+//       font-style: $font-style;
+//  }
+// }
+
+
+// $Montserrat:         'Montserrat';
+// @include font-face($Montserrat, 'Poppins', 300);
+// @include font-face($Montserrat, 'Poppins', 400);
+// @include font-face($Montserrat, 'Poppins', 600);
+// @include font-face($Montserrat, 'Poppins', 700);
+
+$font-primary: 'Inter', sans-serif;

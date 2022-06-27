@@ -1,0 +1,126 @@
+
+.screens {
+	padding-top: 48px;
+	width: 100%;
+	position: relative;
+	display: block;
+
+	&-wrap {
+		position: relative;
+	}
+	
+	&-arrows {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: calc(100% + 100px);
+		height: auto;
+		display: flex;
+		justify-content: space-between;
+
+		&-item {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			cursor: pointer;
+			user-select: none;
+			point-events: none;
+
+			img {
+				width: 24px;
+				height: auto;
+			}
+
+			&.prev {
+				transform: rotate(180deg); 
+			}
+		}
+	}
+
+	&-item {
+		width: 100%;
+		height: 100%;
+		display: flex !important;
+		position: relative;
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			user-select:none;
+			point-events: none;
+		}
+
+	}
+	
+	.slick {
+		&-track {
+			display: flex;
+			align-items: stretch;
+			// height: 100%;
+		}
+
+		&-list {
+			// height: 100%;
+			display: block;
+			margin: 0;
+			position: relative;
+			overflow: hidden;
+		}
+
+		&-slide {
+			display: flex;
+			height: auto;
+			overflow: hidden;
+			border-radius: 18px;
+			margin: 0px 16px;
+
+			@include media-breakpoint-down(sm) {
+				border-radius: 12px;
+				margin: 0;
+			}
+
+			div {
+				width: 100%;
+			}
+		}
+
+		&-dots {
+			margin: 0 auto;
+			margin-top: 32px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			@include media-breakpoint-down(sm) {
+				margin-top: 18px;
+			}
+
+			li {
+				width: 18px;
+				height: 18px;
+				border-radius: 50%;
+				border: 1px solid white;
+				margin: 0px 6px; 
+				overflow: hidden;
+
+				@include media-breakpoint-down(sm) {
+					width: 16px;
+					height: 16px;
+				}
+
+				button {
+					width: 100%;
+					height: 100%;
+					opacity: 0;
+				}
+
+				&.slick-active {
+					background-color: white;
+				}
+			}
+		}
+	}
+}
+

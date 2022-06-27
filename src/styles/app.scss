@@ -1,0 +1,27 @@
+// Base
+@import 'base/colors';
+@import 'base/fonts';
+
+// Modules
+// @import '../../node_modules/slick-carousel/slick/slick.scss';
+// @import '../../node_modules/slick-carousel/slick/slick-theme.scss';
+
+// Custom variables
+@import 'base/bootstrap';
+
+// Default
+@import 'base/default';
+
+// Base elements
+@import 'base/buttons';
+
+
+// Sections
+@import 'sections/section-header';
+@import 'sections/section-hero';
+@import 'sections/section-main';
+@import 'sections/section-info';
+@import 'sections/section-screens';
+@import 'sections/section-download';
+@import 'sections/section-footer';
+
