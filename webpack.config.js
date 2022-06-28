@@ -104,4 +104,7 @@ module.exports = {
             }
         ]
     },
+    output: {
+        publicPath: !isDev ? 'https://maks28925.github.io/one-place' : '/',
+  }
 }
